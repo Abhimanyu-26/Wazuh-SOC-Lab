@@ -16,4 +16,36 @@ The project includes:
 - Detection of multiple attack techniques
 - MITRE ATT&CK mapping
 
-> This project was created as a practical learning lab to strengthen SOC Analyst skills and understand how endpoint telemetry can be used to detect malicious activity.
+> This project was created as a practical learning lab to strengthen SOC Analyst skills and understand how endpoint telemetry can be used to detect malicious activit
+
+
+## Lab Architecture
+
+The lab consists of a Wazuh server running on Ubuntu Server and a Windows endpoint configured with Sysmon. Windows event logs are collected by the Wazuh agent and forwarded to the Wazuh manager for analysis. The Wazuh Dashboard is then used to perform threat hunting, investigate alerts, and review MITRE ATT&CK mappings.
+
+```
+Ubuntu Server
+├── Wazuh Manager
+├── Wazuh Indexer
+└── Wazuh Dashboard
+        │
+        │
+Windows 11 Endpoint
+├── Wazuh Agent
+├── Sysmon
+└── Windows Event Logs
+        │
+        ▼
+Threat Detection & Alert Analysis
+```
+
+## Technologies Used
+
+| Component | Purpose |
+|----------|---------|
+| Ubuntu Server | Hosts the Wazuh platform |
+| Wazuh SIEM | Log collection and threat detection |
+| Windows 11 | Endpoint for attack simulation |
+| Sysmon | Advanced Windows event logging |
+| Windows Event Logs | Security monitoring |
+| MITRE ATT&CK | Attack technique mapping |
