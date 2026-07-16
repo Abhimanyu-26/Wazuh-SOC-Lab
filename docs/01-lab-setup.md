@@ -33,7 +33,7 @@ mkdir
 
 ### Screenshot
 
-![Linux Basic Commands](../screenshots/2_linux basic commands.png)
+![Linux Basic Commands](../screenshots/2_linux%20basic%20commands.png)
 
 *Figure 2: Verification of Linux basic commands.*
 
@@ -52,7 +52,7 @@ sudo apt upgrade -y
 
 ### Screenshot
 
-![System Update](../screenshots/3_system update.png)
+![System Update](../screenshots/3_system%20update.png)
 
 *Figure 3: Ubuntu package update process.*
 
