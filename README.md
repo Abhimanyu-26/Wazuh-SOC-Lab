@@ -90,12 +90,12 @@ Wazuh-SOC-Lab/
 
 Detailed documentation is available in the **docs** folder.
 
-- Chapter 1 – Lab Setup
-- Chapter 2 – Wazuh Installation
-- Chapter 3 – Windows Agent and Sysmon
-- Chapter 4 – Threat Hunting
-- Chapter 5 – Attack Simulations
-- Chapter 6 – Project Summary
+- [Chapter 1 – Lab Setup](docs/01-lab-setup.md)
+- [Chapter 2 – Wazuh Installation](docs/02-wazuh-installation.md)
+- [Chapter 3 – Windows Agent and Sysmon](docs/03-agent-and-sysmon.md)
+- [Chapter 4 – Threat Hunting](docs/04-threat-hunting.md)
+- [Chapter 5 – Attack Simulations](docs/05-attack-simulation.md)
+- [Chapter 6 – Project Summary](docs/06-summary.md)
 
 ---
 
