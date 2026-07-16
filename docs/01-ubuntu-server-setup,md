@@ -2,22 +2,25 @@
 
 ## Objective
 
-The objective of this step was to prepare an Ubuntu Server virtual machine to host the Wazuh platform.
+Prepare an Ubuntu Server virtual machine to host the Wazuh platform for centralized log collection and threat detection.
 
 ## Environment
 
 - Operating System: Ubuntu Server
-- Platform: Virtual Machine
-- Purpose: Host the Wazuh Manager, Indexer, and Dashboard
+- Role: Wazuh Server
+- Components: Wazuh Manager, Wazuh Indexer, and Wazuh Dashboard
 
 ## Steps Performed
 
 1. Installed Ubuntu Server.
-2. Logged in using the created administrator account.
-3. Updated the package repository.
-4. Verified internet connectivity.
-5. Prepared the system for Wazuh installation.
+2. Logged in using the administrator account.
+3. Verified that the server was running correctly.
+4. Prepared the system for the Wazuh installation.
+
+## Screenshot
+
+![Ubuntu Server First Login](../screenshots/1_ubuntu server first login.png)
 
 ## Result
 
-The Ubuntu Server was successfully configured and ready for installing the Wazuh platform.
+The Ubuntu Server was successfully deployed and prepared for installing the Wazuh platform.
