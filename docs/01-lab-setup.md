@@ -12,7 +12,7 @@ After installing Ubuntu Server, the system booted successfully and the initial l
 
 ### Screenshot
 
-![Ubuntu Server First Login](../screenshots/1_ubuntu server first login.png)
+![Ubuntu Server First Login](../screenshots/1_ubuntu%20server%20first%20login.png)
 
 *Figure 1: Ubuntu Server first login after installation.*
 
