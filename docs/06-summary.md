@@ -1,64 +1,51 @@
-# Chapter 6 – Project Summary
+# Chapter 6 - Project Summary
 
 ## Project Overview
 
-This project demonstrates the deployment of a Security Information and Event Management (SIEM) environment using Wazuh on Ubuntu Server. A Windows endpoint was connected using the Wazuh Agent and Sysmon to collect detailed system events. The collected logs were analyzed through the Wazuh Dashboard to detect and investigate simulated attack activities.
+This project demonstrated the deployment of a Security Operations Center (SOC) lab using Wazuh SIEM, Ubuntu Server, Windows 11, and Sysmon. The environment was configured to collect endpoint telemetry, monitor security events, and detect common attack techniques through practical simulations.
 
 ---
 
-## Skills Demonstrated
+## Technologies Used
 
-During this project, the following practical skills were developed:
-
-- Ubuntu Server administration
-- Basic Linux command-line operations
-- Wazuh SIEM installation and configuration
-- Windows endpoint onboarding
-- Sysmon deployment and configuration
-- Threat hunting using the Wazuh Dashboard
-- Windows Event Log analysis
-- Security alert investigation
-- Basic incident analysis
-- MITRE ATT&CK framework interpretation
+| Component | Purpose |
+|-----------|---------|
+| Ubuntu Server | Hosts the Wazuh platform |
+| Wazuh SIEM | Security monitoring and log analysis |
+| Windows 11 | Endpoint for attack simulation |
+| Wazuh Agent | Sends endpoint logs to the server |
+| Sysmon | Advanced Windows event logging |
+| MITRE ATT&CK | Attack technique mapping |
 
 ---
 
-## MITRE ATT&CK Techniques Observed
+## Project Workflow
 
-| Technique ID | Technique |
-|--------------|-------------------------------|
-| T1059.001 | PowerShell |
-| T1059.003 | Windows Command Shell |
-| T1105 | Ingress Tool Transfer |
-| T1087 | Account Discovery |
-| T1110 | Brute Force (Multiple Failed Logons) |
+The overall workflow of the project was:
+
+1. Ubuntu Server was installed.
+2. Wazuh platform was deployed.
+3. Windows endpoint was connected using the Wazuh Agent.
+4. Sysmon was installed to collect detailed event logs.
+5. Security events were monitored through the Wazuh Dashboard.
+6. Multiple attack simulations were performed.
+7. Wazuh detected the attacks and generated alerts for investigation.
 
 ---
 
-## Key Outcomes
+## Key Achievements
 
-- Successfully deployed the Wazuh platform on Ubuntu Server.
-- Connected a Windows endpoint using the Wazuh Agent.
-- Configured Sysmon to generate detailed Windows events.
+- Successfully deployed a functional Wazuh SOC lab.
+- Configured Windows endpoint monitoring.
+- Integrated Sysmon with Wazuh.
 - Performed threat hunting using the Wazuh Dashboard.
-- Simulated multiple attack techniques and verified successful detection.
-- Investigated alerts mapped to the MITRE ATT&CK framework.
-
----
-
-## Future Improvements
-
-This lab can be further expanded by:
-
-- Monitoring multiple endpoints
-- Integrating Sigma detection rules
-- Creating custom Wazuh detection rules
-- Building automated incident response workflows
-- Integrating email or Slack alert notifications
-- Visualizing security metrics with dashboards
+- Simulated multiple attack scenarios.
+- Verified Wazuh alert generation and MITRE ATT&CK mapping.
 
 ---
 
 ## Conclusion
 
-This project provided practical experience in deploying, configuring, and using Wazuh as a SIEM platform for endpoint monitoring and threat detection. It also strengthened my understanding of SOC workflows, Windows event analysis, and attack detection using the MITRE ATT&CK framework.
+The Wazuh SOC Lab successfully demonstrated how a SIEM platform can collect endpoint logs, monitor security events, and detect suspicious activities in real time. This project provided practical experience in SOC operations, threat hunting, endpoint monitoring, and security event analysis using open-source technologies.
+
+The knowledge gained from this project forms a strong foundation for understanding modern Security Operations Center workflows and incident detection techniques.
