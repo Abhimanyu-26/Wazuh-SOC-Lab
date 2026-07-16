@@ -1,51 +1,44 @@
-# Chapter 3 – Windows Agent and Sysmon Configuration
+# Chapter 3 - Windows Agent and Sysmon
 
 ## Objective
 
-The objective of this chapter is to connect the Windows endpoint to the Wazuh server, install Sysmon, and verify that Windows event logs are successfully collected by Wazuh.
+The objective of this chapter is to connect the Windows endpoint to the Wazuh server and configure Sysmon for advanced Windows event logging. This enables Wazuh to collect detailed endpoint telemetry for threat detection.
 
 ---
 
-## Step 1 – Connect Windows Agent
+## Step 1 - Windows Agent Connected
 
-The Wazuh Agent was installed on the Windows 11 endpoint and registered with the Wazuh Server.
+The Wazuh agent was installed on the Windows 11 endpoint and successfully connected to the Wazuh Manager running on the Ubuntu Server. The endpoint status was displayed as active in the Wazuh Dashboard.
 
-Once connected, the endpoint appeared as **Active** in the Wazuh Dashboard.
+### Screenshot
 
-**Screenshot**
+![Windows Agent Connected](../screenshots/7_windows%20agent%20connected%20active.png)
 
-![Windows Agent Connected](../screenshots/7_windows agent connected active.png)
-
----
-
-## Step 2 – Install Sysmon
-
-Microsoft Sysmon was installed on the Windows endpoint to provide detailed system monitoring.
-
-Sysmon records important security events such as:
-
-- Process creation
-- Network connections
-- File creation
-- Registry modifications
-
-These events are forwarded to Wazuh for analysis.
-
-**Screenshot**
-
-![Sysmon Installation](../screenshots/11_sysmon installation success.png)
+*Figure 7: Windows endpoint successfully connected to Wazuh.*
 
 ---
 
-## Step 3 – Verify Sysmon Events
+## Step 2 - Sysmon Installation
 
-After Sysmon installation, the generated events were successfully received and displayed in the Wazuh Dashboard.
+Sysmon was installed on the Windows endpoint to provide detailed monitoring of process creation, network connections, file creation, and other security-related events.
 
-This confirmed that Windows event logs were being collected correctly.
+### Screenshot
 
-**Screenshot**
+![Sysmon Installation](../screenshots/11_sysmon%20installation%20success.png)
 
-![Sysmon Events in Wazuh](../screenshots/12_sysmon events in wazuh.png)
+*Figure 8: Successful Sysmon installation.*
+
+---
+
+## Step 3 - Sysmon Events in Wazuh
+
+After installation, Sysmon events were forwarded to the Wazuh Manager and displayed in the Wazuh Dashboard. These logs provide detailed visibility into endpoint activities for security monitoring.
+
+### Screenshot
+
+![Sysmon Events](../screenshots/12_sysmon%20events%20in%20wazuh.png)
+
+*Figure 9: Sysmon events collected and displayed in Wazuh.*
 
 ---
 
@@ -53,7 +46,6 @@ This confirmed that Windows event logs were being collected correctly.
 
 At the end of this chapter:
 
-- Windows endpoint was connected to Wazuh.
-- Sysmon was installed successfully.
-- Windows event logs were forwarded to Wazuh.
-- The monitoring environment was fully operational.
+- The Windows endpoint was successfully enrolled in Wazuh.
+- Sysmon was installed and configured successfully.
+- Windows event logs were forwarded to Wazuh for continuous monitoring.
