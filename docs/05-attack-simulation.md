@@ -1,83 +1,87 @@
-# Chapter 5 – Attack Simulations and Detection
+# Chapter 5 - Attack Simulations
 
 ## Objective
 
-The objective of this chapter is to simulate common attack techniques on the Windows endpoint and verify that Wazuh detects and logs these activities. Each simulation demonstrates how security events are collected, analyzed, and mapped to the MITRE ATT&CK framework.
+The objective of this chapter is to simulate common attack techniques on the Windows endpoint and verify that Wazuh successfully detects and records the corresponding security events.
 
 ---
 
-## Attack 1 – PowerShell Process Execution
+## Attack 1 - PowerShell Process Execution
 
-PowerShell is commonly abused by attackers to execute scripts, download malware, or perform post-exploitation activities. Wazuh detected the PowerShell process creation and generated an alert for further investigation.
+PowerShell was executed to simulate script execution activity commonly observed during cyber attacks. Wazuh detected the PowerShell process creation and generated an alert for investigation.
 
-**Screenshot**
+### Screenshot
 
-![PowerShell Process Detection](../screenshots/13_powershell_process_spawn_detection.png)
+![PowerShell Process Execution](../screenshots/13_powershell_process_spawn_detection.png)
 
----
-
-## Attack 2 – Suspicious Windows Command Shell Execution
-
-The Windows Command Prompt (cmd.exe) was executed to simulate command-line activity commonly used by attackers.
-
-Wazuh detected the suspicious command shell execution and generated an alert with MITRE ATT&CK mapping.
-
-**Screenshot**
-
-![Suspicious CMD Execution](../screenshots/14_suspicious_cmd_shell_execution.png)
+*Figure 13: Detection of PowerShell process execution.*
 
 ---
 
-## Attack 3 – Executable Dropped in a Temporary Folder
+## Attack 2 - Suspicious Windows Command Shell Execution
 
-An executable file was copied into the Windows temporary directory to simulate malware being placed in a commonly abused location.
+The Windows Command Prompt (cmd.exe) was executed to simulate suspicious command-line activity. Wazuh detected the command shell execution and generated an alert with MITRE ATT&CK mapping.
 
-Wazuh detected the file creation activity and generated a high-severity alert.
+### Screenshot
 
-**Screenshot**
+![Suspicious CMD Execution](../screenshots/14_suspicious%20cmd%20shell%20execution.png)
 
-![Executable File Dropped](../screenshots/15_Executable File Dropped.png)
-
----
-
-## Attack 4 – Base64 Encoded PowerShell Command
-
-A Base64-encoded PowerShell command was executed to simulate an obfuscated attack technique.
-
-Obfuscation is frequently used by attackers to hide malicious commands and evade basic detection.
-
-Wazuh successfully detected the encoded PowerShell execution.
-
-**Screenshot**
-
-![Base64 Encoded PowerShell](../screenshots/16_Base 64 Encoded powershell detection.png)
+*Figure 14: Detection of suspicious command shell execution.*
 
 ---
 
-## Attack 5 – Multiple Windows Logon Failures (Brute Force Simulation)
+## Attack 3 - Executable File Dropped
 
-Multiple failed login attempts were intentionally generated on the Windows endpoint to simulate a brute-force attack.
+An executable file was copied into a temporary directory to simulate malware being dropped on the system. Wazuh detected the file creation event and generated an alert.
 
-Wazuh correlated the repeated authentication failures and produced alerts indicating multiple Windows logon failures.
+### Screenshot
 
-**Screenshot**
+![Executable File Dropped](../screenshots/15_Executable%20File%20Dropped.png)
 
-![Multiple Windows Logon Failures](../screenshots/17_multiple_windows_logon_failure.png)
+*Figure 15: Detection of executable file creation.*
 
 ---
 
-## Attack 6 – Brute Force Detection Overview
+## Attack 4 - Base64 Encoded PowerShell Command
 
-The Threat Hunting dashboard displayed all related authentication events, providing an overview of the simulated brute-force activity.
+A Base64 encoded PowerShell command was executed to simulate an obfuscated attack technique. Wazuh detected the encoded PowerShell command and generated a security alert.
 
-This demonstrated how Wazuh helps analysts investigate authentication attacks through centralized log collection and correlation.
+### Screenshot
 
-**Screenshot**
+![Base64 Encoded PowerShell](../screenshots/16_Base%2064%20Encoded%20powershell%20detection.png)
 
-![Brute Force Overview](../screenshots/18_Bruteforce_detection_overview.png)
+*Figure 16: Detection of Base64 encoded PowerShell execution.*
+
+---
+
+## Attack 5 - Multiple Windows Logon Failures
+
+Several failed Windows logon attempts were generated to simulate a brute-force attack. Wazuh recorded each authentication failure and raised an alert.
+
+### Screenshot
+
+![Multiple Windows Logon Failures](../screenshots/17_multiple%20windows%20logon%20failure.png)
+
+*Figure 17: Detection of multiple failed Windows logon attempts.*
+
+---
+
+## Attack 6 - Brute Force Detection Overview
+
+The generated authentication events were correlated by Wazuh to provide an overview of the simulated brute-force attack.
+
+### Screenshot
+
+![Bruteforce Detection Overview](../screenshots/18_Bruteforce%20detection%20overview.png)
+
+*Figure 18: Brute-force attack detection overview.*
 
 ---
 
 ## Outcome
 
-The simulated attack techniques confirmed that Wazuh successfully detected suspicious PowerShell activity, command-line execution, executable file creation, and repeated failed logon attempts. The generated alerts included detailed event information and MITRE ATT&CK mappings, demonstrating the effectiveness of Wazuh for endpoint monitoring and threat detection.
+At the end of this chapter:
+
+- Multiple attack techniques were successfully simulated.
+- Wazuh detected each malicious activity and generated appropriate alerts.
+- The generated alerts demonstrated Wazuh's ability to monitor endpoint activity and identify suspicious behavior.
