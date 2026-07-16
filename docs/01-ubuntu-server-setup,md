@@ -1,0 +1,23 @@
+# Ubuntu Server Setup
+
+## Objective
+
+The objective of this step was to prepare an Ubuntu Server virtual machine to host the Wazuh platform.
+
+## Environment
+
+- Operating System: Ubuntu Server
+- Platform: Virtual Machine
+- Purpose: Host the Wazuh Manager, Indexer, and Dashboard
+
+## Steps Performed
+
+1. Installed Ubuntu Server.
+2. Logged in using the created administrator account.
+3. Updated the package repository.
+4. Verified internet connectivity.
+5. Prepared the system for Wazuh installation.
+
+## Result
+
+The Ubuntu Server was successfully configured and ready for installing the Wazuh platform.
