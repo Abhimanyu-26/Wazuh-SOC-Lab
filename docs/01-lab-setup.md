@@ -1,44 +1,45 @@
-# Chapter 1 – Lab Setup
+# Chapter 1 - Lab Setup
 
 ## Objective
 
-The objective of this chapter is to prepare the SOC lab environment by installing Ubuntu Server, learning basic Linux commands, and updating the operating system before installing Wazuh.
+The objective of this chapter is to prepare the virtual environment required for the Wazuh Security Operations Center (SOC) lab. Ubuntu Server was selected because it provides a stable and widely supported Linux environment.
 
 ---
 
-## Step 1 – Ubuntu Server Installation
+## Step 1 - Ubuntu Server First Login
 
-Ubuntu Server was installed as the central server for hosting the Wazuh SIEM platform. A virtual machine was created, and the operating system installation was completed successfully.
+After installing Ubuntu Server, the system booted successfully and the initial login screen was displayed. The administrator account created during installation was used to access the server.
 
-**Screenshot**
+### Screenshot
 
 ![Ubuntu Server First Login](../screenshots/1_ubuntu server first login.png)
 
+*Figure 1: Ubuntu Server first login after installation.*
+
 ---
 
-## Step 2 – Basic Linux Commands
+## Step 2 - Linux Basic Commands
 
-After logging into Ubuntu Server, basic Linux commands were used to navigate directories, manage files, and verify the server environment.
+Basic Linux commands were executed to verify that the operating system was functioning correctly and to become familiar with the command-line environment.
 
-Commands practiced include:
+Commands used:
 
-- pwd
-- ls
-- cd
-- mkdir
-- rm
-- cp
-- mv
-- cat
-- clear
+```bash
+pwd
+ls
+cd
+mkdir
+```
 
-**Screenshot**
+### Screenshot
 
 ![Linux Basic Commands](../screenshots/2_linux basic commands.png)
 
+*Figure 2: Verification of Linux basic commands.*
+
 ---
 
-## Step 3 – Updating Ubuntu
+## Step 3 - Updating Ubuntu
 
 Before installing Wazuh, the Ubuntu Server packages were updated to the latest available versions.
 
@@ -49,11 +50,11 @@ sudo apt update
 sudo apt upgrade -y
 ```
 
-Updating the system ensures security patches are installed and reduces compatibility issues during Wazuh installation.
-
-**Screenshot**
+### Screenshot
 
 ![System Update](../screenshots/3_system update.png)
+
+*Figure 3: Ubuntu package update process.*
 
 ---
 
