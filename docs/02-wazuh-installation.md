@@ -1,52 +1,50 @@
-# Chapter 2 – Wazuh Installation
+# Chapter 2 - Wazuh Installation
 
 ## Objective
 
-The objective of this chapter is to install the Wazuh SIEM platform on Ubuntu Server and verify that the Wazuh Dashboard is accessible from the Windows machine.
+The objective of this chapter is to install the Wazuh platform on the Ubuntu Server and verify that the installation completed successfully. The Wazuh Dashboard provides the interface used for monitoring security events and alerts.
 
 ---
 
-## Step 1 – Download Wazuh Installer
+## Step 1 - Downloading the Wazuh Installer
 
-The official Wazuh installation script was downloaded on the Ubuntu Server using the terminal.
+The official Wazuh installation script was downloaded from the Wazuh website. This script automates the installation of the Wazuh Indexer, Manager, and Dashboard.
 
-This script automatically installs the Wazuh Manager, Indexer, and Dashboard.
+### Screenshot
 
-**Screenshot**
+![Wazuh Installer Download](../screenshots/4_Wazuh%20installer%20download%20verified.png)
 
-![Wazuh Installer Download](../screenshots/4_Wazuh installer download verified.png)
-
----
-
-## Step 2 – Install Wazuh
-
-The installation script was executed on Ubuntu Server. The installation process automatically configured all required Wazuh components.
-
-The installation took several minutes to complete successfully.
-
-**Screenshot**
-
-![Wazuh Installation Success](../screenshots/5_wazuh installation success.png)
+*Figure 4: Verification of the downloaded Wazuh installer.*
 
 ---
 
-## Step 3 – Access the Wazuh Dashboard
+## Step 2 - Wazuh Installation Completed
 
-After the installation was completed, the Wazuh Dashboard was opened from the Windows machine using a web browser.
+The installation script completed successfully, installing all required Wazuh components on the Ubuntu Server.
 
-The dashboard was accessed using the Ubuntu Server IP address over HTTPS (Port 443).
+### Screenshot
 
-Example:
+![Wazuh Installation Success](../screenshots/5_wazuh%20installation%20success.png)
+
+*Figure 5: Successful Wazuh installation.*
+
+---
+
+## Step 3 - Accessing the Wazuh Dashboard
+
+The Wazuh Dashboard was accessed securely through HTTPS on port 443 using a web browser running on the Windows host machine.
+
+URL used:
 
 ```text
 https://<Ubuntu_Server_IP>
 ```
 
-Successful login confirmed that the Wazuh platform was installed correctly and ready for monitoring.
+### Screenshot
 
-**Screenshot**
+![Wazuh Dashboard](../screenshots/6_dashboard%20https%20port%20443.png)
 
-![Dashboard Login](../screenshots/6_dashboard https port 443.png)
+*Figure 6: Wazuh Dashboard accessed through HTTPS.*
 
 ---
 
@@ -54,7 +52,6 @@ Successful login confirmed that the Wazuh platform was installed correctly and r
 
 At the end of this chapter:
 
-- Wazuh SIEM was installed successfully.
-- All core Wazuh components were configured.
-- The dashboard was accessed successfully from the Windows endpoint.
-- The environment was ready for endpoint monitoring.
+- Wazuh components were installed successfully.
+- The Wazuh Dashboard was accessible through HTTPS.
+- The SOC environment was ready for endpoint integration.
